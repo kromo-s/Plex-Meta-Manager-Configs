@@ -5,7 +5,7 @@ templates:
   Chart:
     sort_title: +1_<<num>><<collection_name>>
     sync_mode: sync
-    smart_label: random
+    smart_label: release.desc
     
 collections:
   Suggested Anime:
@@ -14,19 +14,14 @@ collections:
       sync_mode: sync
       smart_label: release.desc
   Popular Anime:
-    template: { name: Chart, num: 3 }
+    template: { name: Chart, num: 2 }
     anidb_popular: 30
     anilist_popular: 30
     summary: Popular Anime across the internet
   Top Rated Anime:
-    template: { name: Chart, num: 4 }
+    template: { name: Chart, num: 3 }
     anilist_top_rated: 50
     summary: Top Rated Anime across the internet
-  Current Anime Season:
-    anilist_season:
-      sort_by: popular
-      limit: 100
-    sync_mode: sync
     Top All Anime (MyAnimeList):
       template: { name: Chart, num: 4 }
       mal_all: 100
